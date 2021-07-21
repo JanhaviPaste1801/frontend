@@ -7,7 +7,7 @@ import { Observable} from 'rxjs';
 })
 export class UserService {
 
-  private baseUrl='http://localhost:9098/users';
+  private baseUrl='http://localhost:8085/InsuranceApplication_Backend/users';
   constructor(private http: HttpClient) { }
 
   createUser(user: object): Observable<Object>{
