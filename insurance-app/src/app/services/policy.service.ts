@@ -8,7 +8,7 @@ import { Observable} from 'rxjs';
 export class PolicyService {
 
   
-  private baseUrl='http://localhost:9098/policy';
+  private baseUrl='http://localhost:8085/InsuranceApplication_Backend/policy';
   constructor(private http: HttpClient) { }
 
   createPolicy(policy: object): Observable<Object>{
