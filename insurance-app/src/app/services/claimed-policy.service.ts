@@ -12,7 +12,7 @@ export class ClaimedPolicyService {
   constructor( private http:HttpClient, private authService: AuthService) { }
 userId:number;
 
-  private baseUrl='http://localhost:9098/claimedPolicies';
+  private baseUrl='http://localhost:8085/InsuranceApplication_Backend/claimedPolicies';
 
   addClaimedPolicy(claimedPolicy: object): Observable<Object>{
     return this.http.post(`${this.baseUrl}/addClaimedPolicy`, claimedPolicy);
